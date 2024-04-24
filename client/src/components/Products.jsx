@@ -29,16 +29,33 @@ const Products = ({ cat, filters, sort }) => {
     getProducts();
   }, [cat]);
 
+  // useEffect(() => {
+  //   console.log("Filters in useEffect:", filters); // Добавлено для отладки
+  //   cat && filters &&
+  //     setFilteredProducts(
+  //       products.filter((item) =>
+  //         Object.entries(filters).every(([key, value]) =>
+  //           item[key].includes(value)
+  //         )
+  //       )
+  //     );
+  // }, [products, cat, filters]);
+
   useEffect(() => {
-    cat &&
+    cat && filters &&
       setFilteredProducts(
         products.filter((item) =>
-          Object.entries(filters).every(([key, value]) =>
-            item[key].includes(value)
-          )
+          Object.entries(filters).every(([key, value]) => {
+            if (key === "country") {
+              return item.country === value; // Сравнение строк
+            } else if (key === "century") {
+              return item.century === value; // Сравнение строк (или чисел, если век хранится как число)
+            }
+            return true; // Для других фильтров (если есть)
+          })
         )
       );
-  }, [products, cat, filters]);
+  }, [cat, filters]);
 
   useEffect(() => {
     if (sort === "newest") {

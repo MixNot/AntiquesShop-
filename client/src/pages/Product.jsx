@@ -65,24 +65,36 @@ const Filter = styled.div`
 const FilterTitle = styled.span`
   font-size: 20px;
   font-weight: 200;
+  margin-right: 5px;
 `;
 
-const FilterColor = styled.div`
+const FilterCountry = styled.span`
+  display: flex;
+`;
+
+
+const CountryImage = styled.div`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: ${(props) => props.color};
   margin: 0px 5px;
   border: 1px solid black;
+  background-image: url(${props => props.src});
+  background-size: cover; // Убедитесь, что изображение покрывает всю область
+  /* background-position: center; // Центрируйте изображение внутри круга */
   cursor: pointer;
 `;
 
-const FilterSize = styled.select`
-  margin-left: 10px;
-  padding: 5px;
+const CountryName = styled.div`
+  font-size: 20px;
+  font-weight: bold;
 `;
 
-const FilterSizeOption = styled.option``;
+const CenturyNumber = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+`;
+
 
 const AddContainer = styled.div`
   width: 50%;
@@ -126,8 +138,6 @@ const Product = () => {
   const id = location.pathname.split("/")[2];
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
-  const [color, setColor] = useState("");
-  const [size, setSize] = useState("");
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -150,7 +160,7 @@ const Product = () => {
 
   const handleClick = () => {
     dispatch(
-      addProduct({ ...product, quantity, color, size })
+      addProduct({ ...product, quantity })
     );
   };
   return (
@@ -167,21 +177,18 @@ const Product = () => {
           <Price>$ {product.price}</Price>
           <FilterContainer>
             <Filter>
-              <FilterTitle>Color</FilterTitle>
-              {product.color?.map((c) => (
-                <FilterColor color={c} key={c} onClick={() => setColor(c)} />
-              ))}
+              <FilterTitle>Country</FilterTitle>
+              <FilterCountry>
+                <CountryImage src={product.countryImage} />
+                <CountryName>{product.country}</CountryName>
+              </FilterCountry>
             </Filter>
             <Filter>
-              <FilterTitle>Size</FilterTitle>
-              <FilterSize onChange={(e) => setSize(e.target.value)}>
-                {product.size?.map((s) => (
-                  <FilterSizeOption key={s}>{s}</FilterSizeOption>
-                ))}
-              </FilterSize>
+              <FilterTitle>Century</FilterTitle>
+              <CenturyNumber>{product.century}</CenturyNumber>
             </Filter>
           </FilterContainer>
-          <AddContainer> 
+          <AddContainer>
             <AmountContainer>
               <Remove onClick={() => handleQuantity("dec")} />
               <Amount>{quantity}</Amount>
