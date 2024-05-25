@@ -5,7 +5,7 @@ import {
   Phone,
   Pinterest,
   Room,
-  Twitter,
+  Telegram,
 } from "@material-ui/icons";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -42,7 +42,15 @@ const SocialIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  cursor: pointer;
 `;
+
+const socialMediaLinks = {
+  facebook: "https://www.facebook.com/ваш_профиль_facebook",
+  instagram: "https://www.instagram.com/ваш_профиль_instagram",
+  telegram: "https://t.me/ваш_профиль_telegram", // Используйте ссылку t.me для Telegram
+  pinterest: "https://www.pinterest.com/ваш_профиль_pinterest",
+};
 
 const Center = styled.div`
   flex: 1;
@@ -88,23 +96,22 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>forgotten treasures.</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          Welcome to Forgotten Treasures online shop, where the past meets the present! 
+          We offer a unique collection of antique items that will fill your home with history and unique charm.
         </Desc>
         <SocialContainer>
-          <SocialIcon color="3B5999">
+          <SocialIcon color="3B5999" onClick={() => window.open(socialMediaLinks.facebook, "_blank")}>
             <Facebook />
           </SocialIcon>
-          <SocialIcon color="E4405F">
+          <SocialIcon color="E4405F" onClick={() => window.open(socialMediaLinks.instagram, "_blank")}>
             <Instagram />
           </SocialIcon>
-          <SocialIcon color="55ACEE">
-            <Twitter />
+          <SocialIcon color="55ACEE" onClick={() => window.open(socialMediaLinks.telegram, "_blank")}>
+            <Telegram />
           </SocialIcon>
-          <SocialIcon color="E60023">
+          <SocialIcon color="E60023" onClick={() => window.open(socialMediaLinks.pinterest, "_blank")}>
             <Pinterest />
           </SocialIcon>
         </SocialContainer>
@@ -114,9 +121,9 @@ const Footer = () => {
         <List>
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
+          <ListItem>Book</ListItem>
+          <ListItem>Painting</ListItem>
+          <ListItem>Servings</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
           <ListItem>Wishlist</ListItem>
@@ -130,10 +137,10 @@ const Footer = () => {
           <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
         </ContactItem>
         <ContactItem>
-          <Phone style={{marginRight:"10px"}}/> +1 234 56 78
+          <Phone style={{marginRight:"10px"}}/> +375 (29) 167 27 38
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
+          <MailOutline style={{marginRight:"10px"}} /> ftreasures@mail.ru
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>

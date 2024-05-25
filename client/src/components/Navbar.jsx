@@ -53,6 +53,11 @@ const Logo = styled.h1`
   font-weight: bold;
   ${mobile({ fontSize: "24px" })}
 `;
+
+const LogoContainer = styled.div`
+  cursor: pointer; 
+`;
+
 const Right = styled.div`
   flex: 1;
   display: flex;
@@ -81,11 +86,19 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Link to="/"> 
+            <LogoContainer> 
+              <Logo>forgotten treasures.</Logo>
+            </LogoContainer>
+          </Link>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <Link to="/register">
+            <MenuItem>REGISTER</MenuItem>
+          </Link>
+          <Link to="/login">
+            <MenuItem>SIGN IN</MenuItem>
+          </Link>
           <Link to="/cart">
           <MenuItem>
             <Badge badgeContent={quantity} color="primary">

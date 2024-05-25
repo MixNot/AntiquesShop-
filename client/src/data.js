@@ -1,45 +1,49 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/XsdmR2c/1.png",
-      title: "SUMMER SALE",
+      img: "https://i.ibb.co/kS2xg1M/Default-old-open-suitcase-with-antique-stuff-inside-white-back-0-upscayl-2x-realesrgan-x4plus-1.png",
+      title: "Summer Sale",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "f5fafd",
+      bg: "fcf1ed",
+      bg: "fcf1ed",
+      button: "picture",
     },
     {
       id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
-      title: "AUTUMN COLLECTION",
+      img: "https://i.ibb.co/t2xsPPZ/Default-antique-figurine-white-background-promo-photo-professi-1-upscayl-2x-realesrgan-x4plus-1.png",
+      title: "Servings",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fcf1ed",
+      bg: "f5fafd",
+      button: "servings",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://i.ibb.co/X5xwDmy/Default-old-antique-cabinet-white-background-promo-photo-profe-0-upscayl-2x-realesrgan-x4plus-1.png",
+      title: "Furniture",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
+      button: "furniture",
     },
   ];
 
   export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
-      cat:"women"
+      img: "https://th.bing.com/th/id/OIG3.TNQ2hB.d04cO9AS0wYxk?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      title: "Paintings",
+      cat:"picture"
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
-      cat:"coat"
+      img: "https://th.bing.com/th/id/OIG2.m2w.D9r5ZckGGabxDr_D?w=1024&h=1024&rs=1&pid=ImgDetMain",
+      title: "Servings",
+      cat:"servings"
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
-      cat:"jeans"
+      img: "https://th.bing.com/th/id/OIG4.jP104xRiLhIAM2h4RWCv?pid=ImgGn",
+      title: "Furniture",
+      cat:"furniture"
     },
   ];
 
