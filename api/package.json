@@ -11,13 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "crypto-js": "^4.1.1",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.5",
-    "nodemon": "^2.0.12",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "nodemon": "^3.1.2",
     "react-flag-icon-css": "^1.0.25",
-    "stripe": "^8.174.0"
+    "sqlite3": "^5.1.7",
+    "stripe": "^15.8.0"
   }
 }
