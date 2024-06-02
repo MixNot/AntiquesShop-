@@ -46,9 +46,9 @@ const SocialIcon = styled.div`
 `;
 
 const socialMediaLinks = {
-  facebook: "https://www.facebook.com/ваш_профиль_facebook",
+  facebook: "https://www.facebook.com/groups/1840392419778175",
   instagram: "https://www.instagram.com/ваш_профиль_instagram",
-  telegram: "https://t.me/ваш_профиль_telegram", // Используйте ссылку t.me для Telegram
+  telegram: "https://t.me/ftreasures", 
   pinterest: "https://www.pinterest.com/ваш_профиль_pinterest",
 };
 
