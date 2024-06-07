@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Announcement = () => {
-  return <Container>Super Deal! Free Shipping on Orders Over $50</Container>;
+  return <Container>Супер предложение! Бесплатная доставка при заказе свыше BYN 50</Container>;
 };
 
 export default Announcement;

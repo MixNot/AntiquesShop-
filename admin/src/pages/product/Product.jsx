@@ -57,9 +57,9 @@ export default function Product() {
   return (
     <div className="product">
       <div className="productTitleContainer">
-        <h1 className="productTitle">Product</h1>
+        <h1 className="productTitle">Продукт</h1>
         <Link to="/newproduct">
-          <button className="productAddButton">Create</button>
+          <button className="productAddButton">Создать</button>
         </Link>
       </div>
       <div className="productTop">
@@ -77,11 +77,11 @@ export default function Product() {
               <span className="productInfoValue">{product._id}</span>
             </div>
             <div className="productInfoItem">
-              <span className="productInfoKey">sales:</span>
+              <span className="productInfoKey">продаж:</span>
               <span className="productInfoValue">5123</span>
             </div>
             <div className="productInfoItem">
-              <span className="productInfoKey">in stock:</span>
+              <span className="productInfoKey">наличие:</span>
               <span className="productInfoValue">{product.inStock}</span>
             </div>
           </div>
@@ -90,16 +90,16 @@ export default function Product() {
       <div className="productBottom">
         <form className="productForm">
           <div className="productFormLeft">
-            <label>Product Name</label>
+            <label>Название продукта</label>
             <input type="text" placeholder={product.title} />
-            <label>Product Description</label>
+            <label>Описание продукта</label>
             <input type="text" placeholder={product.desc} />
-            <label>Price</label>
+            <label>Цена</label>
             <input type="text" placeholder={product.price} />
-            <label>In Stock</label>
+            <label>Наличие</label>
             <select name="inStock" id="idStock">
-              <option value="true">Yes</option>
-              <option value="false">No</option>
+              <option value="true">Да</option>
+              <option value="false">Нет</option>
             </select>
           </div>
           <div className="productFormRight">
@@ -110,7 +110,7 @@ export default function Product() {
               </label>
               <input type="file" id="file" style={{ display: "none" }} />
             </div>
-            <button className="productButton">Update</button>
+            <button className="productButton">Обновить</button>
           </div>
         </form>
       </div>

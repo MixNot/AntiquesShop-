@@ -16,7 +16,7 @@ export default function UserList() {
     { field: "id", headerName: "ID", width: 90 },
     {
       field: "user",
-      headerName: "User",
+      headerName: "Пользователь",
       width: 200,
       renderCell: (params) => {
         return (
@@ -30,23 +30,23 @@ export default function UserList() {
     { field: "email", headerName: "Email", width: 200 },
     {
       field: "status",
-      headerName: "Status",
+      headerName: "Статус",
       width: 120,
     },
     {
       field: "transaction",
-      headerName: "Transaction Volume",
+      headerName: "Объем транзакции",
       width: 160,
     },
     {
       field: "action",
-      headerName: "Action",
+      headerName: "Действие",
       width: 150,
       renderCell: (params) => {
         return (
           <>
             <Link to={"/user/" + params.row.id}>
-              <button className="userListEdit">Edit</button>
+              <button className="userListEdit">Изменить</button>
             </Link>
             <DeleteOutline
               className="userListDelete"

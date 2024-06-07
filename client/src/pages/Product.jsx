@@ -177,14 +177,14 @@ const Product = () => {
           <Price>BYN {product.price}</Price>
           <FilterContainer>
             <Filter>
-              <FilterTitle>Country</FilterTitle>
+              <FilterTitle>Страна</FilterTitle>
               <FilterCountry>
                 <CountryImage src={product.countryImage} />
                 <CountryName>{product.country}</CountryName>
               </FilterCountry>
             </Filter>
             <Filter>
-              <FilterTitle>Century</FilterTitle>
+              <FilterTitle>Век</FilterTitle>
               <CenturyNumber>{product.century}</CenturyNumber>
             </Filter>
           </FilterContainer>
@@ -194,7 +194,7 @@ const Product = () => {
               <Amount>{quantity}</Amount>
               <Add onClick={() => handleQuantity("inc")} />
             </AmountContainer>
-            <Button onClick={handleClick}>ADD TO CART</Button>
+            <Button onClick={handleClick}>ДОБАВИТЬ В КОРЗИНУ</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>

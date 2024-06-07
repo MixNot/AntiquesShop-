@@ -79,10 +79,10 @@ export default function NewProduct() {
 
   return (
     <div className="newProduct">
-      <h1 className="addProductTitle">New Product</h1>
+      <h1 className="addProductTitle">Новый продукт</h1>
       <form className="addProductForm">
         <div className="addProductItem">
-          <label>Image</label>
+          <label>Изображение</label>
           <input
             type="file"
             id="file"
@@ -90,25 +90,25 @@ export default function NewProduct() {
           />
         </div>
         <div className="addProductItem">
-          <label>Title</label>
+          <label>Название</label>
           <input
             name="title"
             type="text"
-            placeholder="Old Cup"
+            placeholder="Старая кружка"
             onChange={handleChange}
           />
         </div>
         <div className="addProductItem">
-          <label>Description</label>
+          <label>Описание</label>
           <input
             name="desc"
             type="text"
-            placeholder="description..."
+            placeholder="описание..."
             onChange={handleChange}
           />
         </div>
         <div className="addProductItem">
-          <label>Price</label>
+          <label>Цена</label>
           <input
             name="price"
             type="number"
@@ -117,31 +117,31 @@ export default function NewProduct() {
           />
         </div>
         <div className="addProductItem">
-          <label>Categories</label>
+          <label>Категория</label>
           <input
             type="text"
-            placeholder="jeans,skirts"
+            placeholder="cup"
             onChange={handleCat}
           />
         </div>
         <div className="addProductItem">
-          <label>Stock</label>
+          <label>Наличие</label>
           <select name="inStock" onChange={handleChange}>
-            <option value="true">Yes</option>
-            <option value="false">No</option>
+            <option value="true">Да</option>
+            <option value="false">Нет</option>
           </select>
         </div>
         <div className="addProductItem">
-          <label>Country</label>
+          <label>Страна</label>
           <input
             name="country"
             type="text"
-            placeholder="Country"
+            placeholder="BY"
             onChange={handleChange}
           />
         </div>
         <div className="addProductItem">
-          <label>Country Image</label>
+          <label>Картинка страны</label>
           <input
             type="file"
             id="countryImageFile"
@@ -149,7 +149,7 @@ export default function NewProduct() {
           />
         </div>
         <button onClick={handleClick} className="addProductButton">
-          Create
+          Создать
         </button>
       </form>
     </div>

@@ -96,10 +96,10 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>forgotten treasures.</Logo>
+        <Logo>Забытые сокровища</Logo>
         <Desc>
-          Welcome to Forgotten Treasures online shop, where the past meets the present! 
-          We offer a unique collection of antique items that will fill your home with history and unique charm.
+          Добро пожаловать в интернет-магазин «Забытые сокровища», где прошлое встречается с настоящим!
+          Мы предлагаем уникальную коллекцию антикварных предметов, которые наполнят ваш дом историей и неповторимым шармом.
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999" onClick={() => window.open(socialMediaLinks.facebook, "_blank")}>
@@ -117,24 +117,21 @@ const Footer = () => {
         </SocialContainer>
       </Left>
       <Center>
-        <Title>Useful Links</Title>
+        <Title>Полезные ссылки</Title>
         <List>
-          <ListItem>Home</ListItem>
-          <ListItem>Cart</ListItem>
-          <ListItem>Book</ListItem>
-          <ListItem>Painting</ListItem>
-          <ListItem>Servings</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Terms</ListItem>
+          <ListItem>Главная</ListItem>
+          <ListItem>Карзина</ListItem>
+          <ListItem>Книги</ListItem>
+          <ListItem>Картины</ListItem>
+          <ListItem>Сервировка</ListItem>
+          <ListItem>Мой аккаунт</ListItem>
+          <ListItem>Условия</ListItem>
         </List>
       </Center>
       <Right>
-        <Title>Contact</Title>
+        <Title>Контакты</Title>
         <ContactItem>
-          <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
+          <Room style={{marginRight:"10px"}}/> 220030, г. Минск, ул. Малиновка, д. 8
         </ContactItem>
         <ContactItem>
           <Phone style={{marginRight:"10px"}}/> +375 (29) 167 27 38

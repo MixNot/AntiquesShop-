@@ -46,12 +46,6 @@ export default function Home() {
   return (
     <div className="home">
       <FeaturedInfo />
-      <Chart
-        data={userStats}
-        title="User Analytics"
-        grid
-        dataKey="Active User"
-      />
       <div className="homeWidgets">
         <WidgetSm />
         <WidgetLg />

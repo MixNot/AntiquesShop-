@@ -81,23 +81,23 @@ const Login = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>SIGN IN</Title>
+        <Title>ЛОГИН</Title>
         <Form>
           <Input
-            placeholder="username"
+            placeholder="имя пользователя"
             onChange={(e) => setUsername(e.target.value)}
           />
           <Input
-            placeholder="password"
+            placeholder="пароль"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button onClick={handleClick} disabled={isFetching}>
-            LOGIN
+            ВОЙТИ
           </Button>
-          {error && <Error>Something went wrong...</Error>}
-          <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          {error && <Error>Что то произошло...</Error>}
+          {/* <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link> */}
+          <Link>СОЗДАТЬ НОВЫЙ АККАУНТ</Link>
         </Form>
       </Wrapper>
     </Container>

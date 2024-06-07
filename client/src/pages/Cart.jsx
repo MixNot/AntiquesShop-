@@ -188,26 +188,26 @@ const Cart = () => {
       <Announcement />
       <Navbar />
       <Wrapper>
-        <Title>YOUR BAG</Title>
+        <Title>ВАША КОРЗИНА</Title>
         <Top>
           <Link to="/"> 
-              <TopButton>CONTINUE SHOPPING</TopButton>
+              <TopButton>ПРОДОЛЖИТЬ ПОКУПКИ</TopButton>
           </Link>
-          <TopTexts>
+          {/* <TopTexts>
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
-          </TopTexts>
+          </TopTexts> */}
           <StripeCheckout
               name="forgotten treasures."
               image="https://i.ibb.co/R61zBkJ/OIG2.jpg"
               billingAddress
               shippingAddress
-              description={`Your total is BYN${cart.total}`}
+              description={`В итоге: BYN${cart.total}`}
               amount={cart.total * 100}
               token={onToken}
               stripeKey={KEY}
             >
-          <TopButton type="filled">CHECKOUT NOW</TopButton> 
+          <TopButton type="filled">КУПИТЬ СЕЙЧАС</TopButton> 
           </StripeCheckout>
         </Top>
         <Bottom>
@@ -218,7 +218,7 @@ const Cart = () => {
                   <Image src={product.img} />
                   <Details>
                     <ProductName>
-                      <b>Product:</b> {product.title}
+                      <b>Продукт:</b> {product.title}
                     </ProductName>
                     <ProductId>
                       <b>ID:</b> {product._id}
@@ -244,21 +244,21 @@ const Cart = () => {
             <Hr />
           </Info>
           <Summary>
-            <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+            <SummaryTitle>ИТОГ ЗАКАЗА</SummaryTitle>
             <SummaryItem>
-              <SummaryItemText>Subtotal</SummaryItemText>
+              <SummaryItemText>Стоимость</SummaryItemText>
               <SummaryItemPrice>BYN {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
-              <SummaryItemText>Estimated Shipping</SummaryItemText>
+              <SummaryItemText>Доставка</SummaryItemText>
               <SummaryItemPrice>BYN 5.90</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
-              <SummaryItemText>Shipping Discount</SummaryItemText>
+              <SummaryItemText>Скидка на доставку</SummaryItemText>
               <SummaryItemPrice>BYN -5.90</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem type="total">
-              <SummaryItemText>Total</SummaryItemText>
+              <SummaryItemText>Итого</SummaryItemText>
               <SummaryItemPrice>BYN {cart.total}</SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
@@ -266,12 +266,12 @@ const Cart = () => {
               image="https://i.ibb.co/R61zBkJ/OIG2.jpg"
               billingAddress
               shippingAddress
-              description={`Your total is $${cart.total}`}
+              description={`Ваша общая сумма BYN ${cart.total}`}
               amount={cart.total * 100}
               token={onToken}
               stripeKey={KEY}
             >
-              <Button>CHECKOUT NOW</Button>
+              <Button>КУПИТЬ СЕЙЧАС</Button>
             </StripeCheckout>
           </Summary>
         </Bottom>

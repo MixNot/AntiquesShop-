@@ -20,13 +20,13 @@ export default function WidgetLg() {
   };
   return (
     <div className="widgetLg">
-      <h3 className="widgetLgTitle">Latest transactions</h3>
+      <h3 className="widgetLgTitle">Последние транзакции</h3>
       <table className="widgetLgTable">
         <tr className="widgetLgTr">
-          <th className="widgetLgTh">Customer</th>
-          <th className="widgetLgTh">Date</th>
-          <th className="widgetLgTh">Amount</th>
-          <th className="widgetLgTh">Status</th>
+          <th className="widgetLgTh">Клиент</th>
+          <th className="widgetLgTh">Дата</th>
+          <th className="widgetLgTh">Сумма</th>
+          <th className="widgetLgTh">Статус</th>
         </tr>
         {orders.map((order) => (
           <tr className="widgetLgTr" key={order._id}>

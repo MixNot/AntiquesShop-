@@ -159,9 +159,9 @@ const ProductList = () => {
       <Title>{cat}</Title>
       <FilterContainer>
         <Filter>
-          <FilterText>Filter Products:</FilterText>
+          <FilterText>ФИЛЬТР ТОВАРОВ:</FilterText>
           <Select name="country" onChange={handleFilters}>
-            <Option disabled>Country</Option>
+            <Option disabled>СТРАНА</Option>
             <Option>UK</Option>
             <Option>FR</Option>
             <Option>AT</Option>
@@ -174,7 +174,7 @@ const ProductList = () => {
             <Option>SU</Option>
           </Select>
           <Select name="century" onChange={handleFilters}>
-            <Option disabled>Century</Option>
+            <Option disabled>ВЕК</Option>
             <Option>XVII</Option>
             <Option>XVIII</Option>
             <Option>XIX</Option>
@@ -183,11 +183,11 @@ const ProductList = () => {
           </Select>
         </Filter>
         <Filter>
-          <FilterText>Sort Products:</FilterText>
+          <FilterText>СОРТИРОВКА ТОВАРОВ:</FilterText>
           <Select onChange={(e) => setSort(e.target.value)}>
-            <Option value="newest">Newest</Option>
-            <Option value="asc">Price (asc)</Option>
-            <Option value="desc">Price (desc)</Option>
+            <Option value="newest">Новые</Option>
+            <Option value="asc">Цена (по возр.)</Option>
+            <Option value="desc">Цена (по убыв.)</Option>
           </Select>
         </Filter>
       </FilterContainer>

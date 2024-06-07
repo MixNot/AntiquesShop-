@@ -58,19 +58,19 @@ const Register = () => {
   return (
     <Container>
       <Wrapper>
-        <Title>CREATE AN ACCOUNT</Title>
+        <Title>СОЗДАНИЕ АККАУНТА</Title>
         <Form>
-          <Input placeholder="name" />
-          <Input placeholder="last name" />
-          <Input placeholder="username" />
+          <Input placeholder="имя" />
+          <Input placeholder="фамилия" />
+          <Input placeholder="имя пользователя" />
           <Input placeholder="email" />
-          <Input placeholder="password" />
-          <Input placeholder="confirm password" />
+          <Input placeholder="пароль" />
+          <Input placeholder="подтвердить пароль" />
           <Agreement>
-            By creating an account, I consent to the processing of my personal
-            data in accordance with the <b>PRIVACY POLICY</b>
+            Создавая учетную запись, я даю согласие на обработку моих личных
+            данные в соответствии с <b>ПОЛИТИКОЙ КОНФИДЕНЦИАЛЬНОСТИ</b>
           </Agreement>
-          <Button>CREATE</Button>
+          <Button>СОЗДАТЬ</Button>
         </Form>
       </Wrapper>
     </Container>

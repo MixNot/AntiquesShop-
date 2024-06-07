@@ -79,7 +79,6 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
@@ -94,10 +93,10 @@ const Navbar = () => {
         </Center>
         <Right>
           <Link to="/register">
-            <MenuItem>REGISTER</MenuItem>
+            <MenuItem>РЕГИСТРАЦИЯ</MenuItem>
           </Link>
           <Link to="/login">
-            <MenuItem>SIGN IN</MenuItem>
+            <MenuItem>ЛОГИН</MenuItem>
           </Link>
           <Link to="/cart">
           <MenuItem>

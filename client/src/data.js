@@ -2,8 +2,8 @@ export const sliderItems = [
     {
       id: 1,
       img: "https://i.ibb.co/kS2xg1M/Default-old-open-suitcase-with-antique-stuff-inside-white-back-0-upscayl-2x-realesrgan-x4plus-1.png",
-      title: "Summer Sale",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      title: "Летняя распродажа",
+      desc: "Откройте для себя что-то новое и удивительное в наших картинах. Узнайте больше!",
       bg: "fcf1ed",
       bg: "fcf1ed",
       button: "picture",
@@ -11,16 +11,16 @@ export const sliderItems = [
     {
       id: 2,
       img: "https://i.ibb.co/t2xsPPZ/Default-antique-figurine-white-background-promo-photo-professi-1-upscayl-2x-realesrgan-x4plus-1.png",
-      title: "Servings",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      title: "Столовое искусство",
+      desc: "Добавьте элегантность в свой дом с нашими сервировочными изделиями. Откройте для себя коллекцию!",
       bg: "f5fafd",
       button: "servings",
     },
     {
       id: 3,
       img: "https://i.ibb.co/X5xwDmy/Default-old-antique-cabinet-white-background-promo-photo-profe-0-upscayl-2x-realesrgan-x4plus-1.png",
-      title: "Furniture",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+      title: "Уютный интерьер",
+      desc: "Обновите интерьер с нашей уникальной мебелью. Найдите свое!",
       bg: "fbf0f4",
       button: "furniture",
     },
@@ -30,19 +30,19 @@ export const sliderItems = [
     {
       id: 1,
       img: "https://th.bing.com/th/id/OIG3.TNQ2hB.d04cO9AS0wYxk?w=1024&h=1024&rs=1&pid=ImgDetMain",
-      title: "Paintings",
+      title: "Картины",
       cat:"picture"
     },
     {
       id: 2,
       img: "https://th.bing.com/th/id/OIG2.m2w.D9r5ZckGGabxDr_D?w=1024&h=1024&rs=1&pid=ImgDetMain",
-      title: "Servings",
+      title: "Сервировка",
       cat:"servings"
     },
     {
       id: 3,
       img: "https://th.bing.com/th/id/OIG4.jP104xRiLhIAM2h4RWCv?pid=ImgGn",
-      title: "Furniture",
+      title: "Мебель",
       cat:"furniture"
     },
   ];
